@@ -63,7 +63,7 @@ setopt no_err_exit          # don't weant to see exit status even if nonzero
 setopt no_err_return        # no return from a function with non 0 ending cmds
 setopt exec                 # sure we want to exec commands
 setopt extended_glob        # #,~,^ expansion
-setopt no_extended_history  # regular history
+#setopt no_extended_history  # regular history
 setopt no_flow_control      # ignore ^S/^Q
 setopt function_argzero     # $0 == name of script
 setopt glob                 # sure i want globbing

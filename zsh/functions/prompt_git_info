@@ -1,0 +1,23 @@
+if [ -n "$__CURRENT_GIT_BRANCH" ]; then
+    local s="$__CURRENT_GIT_BRANCH"
+    local f="" 
+    case "$__CURRENT_GIT_BRANCH_STATUS" in
+        ahead)
+        f+="↑"
+        ;;
+        diverged)
+        f+="↕"
+        ;;
+        behind)
+        f+="↓"
+        ;;
+    esac
+    if [ -n "$__CURRENT_GIT_BRANCH_IS_DIRTY" ]; then
+        f+="⚡"
+    fi
+    local vcs="%{$fg_no_bold[yellow]%}"  
+    local flag="%{$fg_bold[yellow]%}"  
+    local reset="%{$reset_color%}"
+
+    printf " %s" "${vcs}${s}${flag}${f}${vcs}${reset}"
+fi

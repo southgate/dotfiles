@@ -1,0 +1,63 @@
+#!/bin/zsh
+
+autoload zmv
+alias mmv='noglob zmv -W'
+
+alias su='export XAUTHORITY=${HOME}/.Xauthority ; sudo -s'
+alias sudo='export XAUTHORITY=${HOME}/.Xauthority ; sudo'
+
+alias du="du -hcs"
+alias df="df -h"
+
+alias btgui="btdownloadgui --max_upload_rate 2 --responsefile"
+alias btnc="btdownloadcurses --max_upload_rate 2 --responsefil"
+alias btm="btlaunchmanycurses"
+
+#case "${$(ls --version | head -1)##* }" in
+#    [0-5].*)
+#        alias ls="ls -bCF"
+#        ;;
+#    *)
+#        alias ls="ls --group-directories-first -bCF"
+#        ;;
+#esac
+
+alias la="ls -a"
+alias ll="ls -l"
+alias lla="ls -la"
+alias lal="ls -la"
+
+alias egrep='egrep --color=tty -d skip'
+alias fgrep='fgrep --color=tty -d skip'
+alias grep='grep --color=tty -d skip'
+
+alias md='mkdir'
+alias rd='rmdir'
+alias rm='rm -i'
+
+alias v="/usr/share/vim/vim63/macros/less.sh -u NONE -U NONE -c 'set ft=man mouse=a'"
+cvi () {
+    vim -O ${${1%.[hc]}%.}.{h,c}
+}
+xvi () {
+    vim -O ${${${1%.h}%.cpp}%.}.{h,cpp}
+}
+ovi () {
+    vim -O ${${1%.ml}%.}.ml{i,}
+}
+
+alias br='bts --mbox show'
+
+upload() {
+    debsign *.changes
+    dput -e 0 gluck_delayed *.changes
+}
+
+conf_push () {
+    echo -n "PUSHING TO $1"
+    rsync -au --exclude=.git --delete ~madcoder/.madconf/ "$1":.madconf/
+    ssh "$1" LC_ALL=C .madconf/bin/madconf
+    echo "."
+}
+
+dict () { dictl "$@" 2>&1 | colorit | less -R ; }

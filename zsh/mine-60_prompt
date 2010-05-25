@@ -1,0 +1,11 @@
+autoload -Uz colors && colors
+
+local text="%{$fg_bold[red]%}"
+local user="%{$fg_no_bold[cyan]%}"
+local punctuation="%{$fg_no_bold[red]%}"
+local emph="%{$fg_no_bold[red]%}"
+local vcs="%{$fg_no_bold[yellow]%}"
+local final="%{$reset_color%}"
+
+PROMPT='${user}%n@${user}%m ${text}%c${vcs}$(prompt_git_info) ${emph}$ ${final}'
+#RPROMPT='${punctuation}[${text}%d${punctuation}] ${final}'

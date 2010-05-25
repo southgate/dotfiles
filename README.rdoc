@@ -1,0 +1,10 @@
+= Dotfiles 
+
+For use on UNIX machines (I hope)
+
+== Installation
+
+  git clone spondools@spondooliks.org:~/git/dotfiles.git ~/.dotfiles
+  cd ~/.dotfiles
+  rake install
+

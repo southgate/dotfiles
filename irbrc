@@ -31,3 +31,9 @@ require 'interactive_editor'
 #if ENV.include?('RAILS_ENV') && !Object.const_defined?('RAILS_DEFAULT_LOGGER')
 #    Object.const_set('RAILS_DEFAULT_LOGGER', Logger.new(STDOUT))
 #end
+
+def rails_routes # I always forget this
+    include ActionController::UrlWriter
+    default_url_options[:host] = 'whatever'
+end
+

@@ -1,8 +1,8 @@
 #! /bin/zsh
-
 autoload -U compinit zrecompile
 
 ###
+export TERM=xterm-256color
 autoload -U colors
 colors
 # From http://sebastiancelis.com/2009/nov/16/zsh-prompt-git-users/

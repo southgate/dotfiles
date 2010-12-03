@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/alex/Projects/Personal/darcs/shell-kit/.vim/ftplugin/javascript'
+let g:netrw_dirhist_2='/Users/alex/Projects/Personal/darcs/shell-kit/.vim/ftplugin/javascript/jslint'
+let g:netrw_dirhist_3='/Users/alex/Projects/Personal/darcs/shell-kit/.vim/ftplugin/javascript'
+let g:netrw_dirhist_4='/Users/alex/.vim'
+let g:netrw_dirhist_5='/Users/alex/.vim/plugin'
+let g:netrw_dirhist_6='/Users/alex/Projects/Personal/darcs/shell-kit/.vim/plugin'

@@ -37,6 +37,11 @@ if version >= 500
 
   " Switch on search pattern highlighting.
   set hlsearch
+  
+  set transparency=5
+  if has("gui_running")
+    set guioptions=egmrt
+  endif
 
   " For Win32 version, have "K" lookup the keyword in a help file
   "if has("win32")

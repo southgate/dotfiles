@@ -1,0 +1,1 @@
+tplugin.vba: call delete('/Users/alex/.vim/doc/tplugin.txt')|call delete('/Users/alex/.vim/macros/tplugin.vim')|call delete('/Users/alex/.vim/autoload/tplugin.vim')

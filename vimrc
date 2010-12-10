@@ -1,7 +1,7 @@
 set ts=4
 "set textwidth=80
 syntax on
-colorscheme desert
+colorscheme slate
 
 set expandtab
 set nocompatible
@@ -49,3 +49,5 @@ let g:tlist_javascript_settings = 'javascript;s:string;a:array;o:object;f:functi
 
 " FuzzyFinder
 map ff :FufFile **/<CR>
+
+cmap js :call JavascriptLint()<CR>

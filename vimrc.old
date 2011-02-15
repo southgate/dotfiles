@@ -1,13 +1,15 @@
-set ts=4
 "set textwidth=80
 syntax on
-colorscheme slate
 
 set expandtab
+set shiftwidth=2
+set softtabstop=2
+
 set nocompatible
 set ruler
 "set term=builtin_ansi
 set autoindent		" always set autoindenting on
+set autoread " always re-read buffers that have changed on disk
 set showmatch
 set nohls	 				" no highlight search
 set nonu
@@ -49,5 +51,22 @@ let g:tlist_javascript_settings = 'javascript;s:string;a:array;o:object;f:functi
 
 " FuzzyFinder
 map ff :FufFile **/<CR>
+map fr :FufRenewCache<CR>
+    
+map fi :!open -a /Applications/Firefox.app/ "%"<CR>
 
-cmap js :call JavascriptLint()<CR>
+nmap <C-j><C-s> :call JavascriptLint()<CR>
+
+" Javascript folding
+function! JavaScriptFold() 
+    setl foldmethod=syntax
+    setl foldlevelstart=1
+    syn region foldBraces start=/{/ end=/}/ transparent fold keepend extend
+
+    function! FoldText()
+        return substitute(getline(v:foldstart), '{.*', '{...}', '')
+    endfunction
+    setl foldtext=FoldText()
+endfunction
+au FileType javascript call JavaScriptFold()
+au FileType javascript setl fen

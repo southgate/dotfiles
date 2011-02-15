@@ -19,6 +19,7 @@
 set ch=2		" Make command line two lines high
 
 set mousehide		" Hide the mouse when typing text
+colorscheme slate
 
 " Make shift-insert work like in Xterm
 map <S-Insert> <MiddleMouse>
@@ -38,7 +39,7 @@ if version >= 500
   " Switch on search pattern highlighting.
   set hlsearch
   
-  set transparency=5
+  "set transparency=5
   if has("gui_running")
     set guioptions=egmrt
   endif

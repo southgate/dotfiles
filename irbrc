@@ -17,23 +17,22 @@
 #  helper :application rescue nil
 #end if ENV['RAILS_ENV']
 
-require 'rubygems'
-require 'wirble' # colorized irb repl
-Wirble.init
-Wirble.colorize
+#require 'rubygems'
+##require 'wirble' # colorized irb repl
+#Wirble.init
+#Wirble.colorize
 
 #require 'bond' # fancy autocopmletion
 #Bond.start
 
-require 'interactive_editor'
+#require 'interactive_editor'
 
 #require 'logger'
 #if ENV.include?('RAILS_ENV') && !Object.const_defined?('RAILS_DEFAULT_LOGGER')
 #    Object.const_set('RAILS_DEFAULT_LOGGER', Logger.new(STDOUT))
 #end
 
-def rails_routes # I always forget this
-    include ActionController::UrlWriter
-    default_url_options[:host] = 'whatever'
-end
-
+# def rails_routes # I always forget this
+#   include ActionController::UrlWriter
+#  default_url_options[:host] = 'whatever'
+# end

@@ -1,2 +1,13 @@
 let g:syntastic_enable_signs=0
+" Use Node.js for JavaScript interpretation
+let $JS_CMD='node'
+color molokai
+map <Leader>r :NERDTreeFind<CR>
+map <F6> :%s/\s\+$//g<CR>
 "let g:JSLintHighlightErrorLine = 0
+
+"use indent to create folds on file load, then set fold method to manual.
+"augroup vimrc
+"  au BufReadPre * setlocal foldmethod=indent
+"  au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
+"augroup END

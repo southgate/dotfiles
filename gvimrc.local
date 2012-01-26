@@ -1,2 +1,9 @@
 set antialias
+" Don't show scrollbar
+set guioptions-=L
+set guioptions-=r
 set guifont=Monaco:h10
+colorscheme solarized
+
+" Save on lose focus
+autocmd BufLeave,FocusLost * silent! wall

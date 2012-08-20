@@ -1,0 +1,6 @@
+machine api.heroku.com
+  login alex@2ndrategeniuses.com
+  password 425e422b70e9e36c9797f29809016df7481f31cb
+machine code.heroku.com
+  login alex@2ndrategeniuses.com
+  password 425e422b70e9e36c9797f29809016df7481f31cb

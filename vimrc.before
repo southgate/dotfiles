@@ -1,0 +1,4 @@
+" set statusline=%f\ %m\ %r
+" call janus#disable_plugin('fugitive', "Poor performance")
+" call janus#disable_plugin('syntastic', "Poor performance")
+" call janus#disable_plugin('css-color', "Poor performance")

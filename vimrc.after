@@ -4,6 +4,10 @@ let $JS_CMD='node'
 color molokai
 map <Leader>r :NERDTreeFind<CR>
 map <F6> :%s/\s\+$//g<CR>
+set dir=/tmp " Write swap files to /tmp.
+
+" Ignore files. This will affect 
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/.*cache/*
 "let g:JSLintHighlightErrorLine = 0
 
 "use indent to create folds on file load, then set fold method to manual.

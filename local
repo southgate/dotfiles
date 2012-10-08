@@ -77,5 +77,8 @@ alias rock="cd ~/Projects/Work/skcamp/rockgame"
 alias mancala="cd ~/Projects/Work/skcamp/mancala"
 alias concombre='be cucumber'
 
+# newsbound
+alias nb="cd ~/Projects/Work/newsbound"
+
 # communitygrains 
 alias cg="cd ~/Projects/Work/2rg/communitygrains"

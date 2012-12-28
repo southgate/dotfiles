@@ -79,6 +79,9 @@ alias concombre='be cucumber'
 
 # newsbound
 alias nb="cd ~/Projects/Work/newsbound"
+# Node bins
+export PATH=/usr/local/share/npm/bin:$PATH
+export PATH=./node_modules/.bin:$PATH
 
 # communitygrains 
 alias cg="cd ~/Projects/Work/2rg/communitygrains"

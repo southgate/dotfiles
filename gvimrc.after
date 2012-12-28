@@ -4,6 +4,7 @@ set guioptions-=L
 set guioptions-=r
 set guioptions-=T
 set guifont=Monaco:h10
+set vb " visual bell
 colorscheme solarized
 
 if has("gui_macvim")

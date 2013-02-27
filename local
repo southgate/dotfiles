@@ -46,6 +46,8 @@ parse_git_branch() {
 }
 
 alias gl="git log --pretty=oneline --graph --all"
+alias gpo="git pull origin"
+alias gcb="git checkout -b $1"
 
 # Open a file in Firefox
 ff() {

@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/alex/Projects/External/mongoid'
-let g:netrw_dirhist_2='/Users/alex/.rvm/gems/ruby-1.9.2-p136@topaz/gems/ruby-hl7-1.0.3'
-let g:netrw_dirhist_3='/Users/alex/.rvm/gems/ruby-1.9.2-p136@topaz/gems/mongoid-2.0.0.rc.7'

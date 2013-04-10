@@ -5,7 +5,6 @@ if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
 fi
 
-
 export PAGER=/usr/bin/less
 export EDITOR=/usr/bin/vim
 export CLICOLOR=1
@@ -20,24 +19,6 @@ xterm*|rxvt*)
     ;;
 esac
 
-#if [ -f ~/.t11e ]; then
-#  . ~/.t11e
-#fi
-if [ -f ~/.pw ]; then
-  . ~/.pw
-fi
-if [ -f ~/.smp ]; then
-  . ~/.smp
-fi
 if [ -f ~/.local ]; then
   . ~/.local
 fi
-
-# {{{
-# Node Completion - Auto-generated, do not touch.
-shopt -s progcomp
-for f in $(command ls ~/.node-completion); do
-  f="$HOME/.node-completion/$f"
-  test -f "$f" && . "$f"
-done
-# }}}

@@ -1,42 +1,23 @@
 ### Local ### 
-# MacPorts support
-#export PATH=/opt/local/bin:/opt/local/sbin:${PATH}
-#export MANPATH=/opt/local/share/man:${MANPATH}
-#export INFOPATH=/opt/local/share/info:${INFOPATH}
 
 # Local installs
-export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export EDITOR=mvim
 
 # Java support
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
 
-# Django support
-export DJANGO_SETTINGS_MODULE=settings
-export PATH=/Users/alex/Projects/External/pythonpackages/django/bin:$PATH
-
-# Mysql support
-alias mysqlstart='/usr/local/Cellar/mysql/5.1.49/share/mysql/mysql.server start'
-alias mysqlstop='/usr/local/Cellar/mysql/5.1.49/share/mysql/mysql.server stop'
-
-# Git Hack'n'Ship Tools 
-export PATH=$PATH:~/Projects/Work/smp/current/bin
-
-#alias tail='tail -n100'
 alias ttop='/usr/bin/top -ocpu -R -s 2 -n30'
 alias vless='vim -R -T builtin_ansi -u /usr/share/vim/vim62/macros/less.vim'
 alias spondooliks='ssh spondool@spondooliks.org'
-alias svnrm="svn status | grep ^! | sed 's/\! *\(.*\)/\"\1\"/' | xargs svn rm"
-alias ipy="ipython"
 alias p='ping google.com'
-alias ll='ls -lthr'
-alias t='tmux -u new'
 alias vim='mvim -v'
-alias gb='for k in `git branch|sed "s/^..//"`;do echo -e `git log -1 --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" "$k" --`\\t"$k";done|sort'
 
-# Amazon Web Services
-export AWS_ACCESS_KEY_ID='1E6GN676EDJGJSHPDT02'
-export AWS_SECRET_ACCESS_KEY='1XRypRki4SqRFvRQmkHAuE2CVkTkgcsRVLxjgl2W'
+alias be='bundle exec'
+
+alias gb='for k in `git branch|sed "s/^..//"`;do echo -e `git log -1 --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" "$k" --`\\t"$k";done|sort'
+alias gl="git log --pretty=oneline --graph --all"
+alias gpo="git pull origin"
+alias gcb="git checkout -b $1"
 
 function l2 {  mdfind "kMDItemDisplayName == '$@'wc"; }
 
@@ -45,33 +26,13 @@ parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-alias gl="git log --pretty=oneline --graph --all"
-alias gpo="git pull origin"
-alias gcb="git checkout -b $1"
-
-# Open a file in Firefox
-ff() {
-  open -a /Applications/Firefox.app/ "$1"
-}
-
 # 'find' shortcuts
 alias findsmall='find . -size -1000000c'
 
 # Ruby Version Manager
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
-alias be='bundle exec'
 
 # Project shortucts
-
-# LiveClimate support
-alias lcmysql='mysql -u alex -palex liveclimate_dev'
-alias lc="cd ~/Projects/Work/liveclimate"
-
-# welnessfx
-alias wfx="cd ~/Projects/Work/carbon5/wfx/topaz"
-alias jade="cd ~/Projects/Work/carbon5/wfx/jade"
-alias opal="cd ~/Projects/Work/carbon5/wfx/opal"
-alias topaz="wfx"
 
 # skcamp
 alias uno="cd ~/Projects/Work/skcamp/uno"
@@ -81,9 +42,4 @@ alias concombre='be cucumber'
 
 # newsbound
 alias nb="cd ~/Projects/Work/newsbound"
-# Node bins
-export PATH=/usr/local/share/npm/bin:$PATH
-export PATH=./node_modules/.bin:$PATH
-
-# communitygrains 
-alias cg="cd ~/Projects/Work/2rg/communitygrains"
+# export PATH=/usr/local/share/npm/bin:$PATH

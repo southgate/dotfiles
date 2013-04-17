@@ -13,6 +13,8 @@ alias p='ping google.com'
 alias vim='mvim -v'
 
 alias be='bundle exec'
+alias e='subl . &'
+alias tags='ctags -R --languages=ruby --exclude=.git'
 
 alias gb='for k in `git branch|sed "s/^..//"`;do echo -e `git log -1 --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" "$k" --`\\t"$k";done|sort'
 alias gl="git log --pretty=oneline --graph --all"
@@ -43,3 +45,8 @@ alias concombre='be cucumber'
 # newsbound
 alias nb="cd ~/Projects/Work/newsbound"
 # export PATH=/usr/local/share/npm/bin:$PATH
+
+# github
+alias ghid="cd ~/github/id"
+alias gh="cd ~/github/github"
+

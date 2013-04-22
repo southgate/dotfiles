@@ -1,0 +1,3 @@
+[submodule "janus/hammer"]
+	path = janus/hammer
+	url = git@github.com:matthias-guenther/hammer.vim.git

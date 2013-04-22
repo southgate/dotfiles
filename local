@@ -37,13 +37,13 @@ alias findsmall='find . -size -1000000c'
 # Project shortucts
 
 # skcamp
-alias uno="cd ~/Projects/Work/skcamp/uno"
-alias rock="cd ~/Projects/Work/skcamp/rockgame"
-alias mancala="cd ~/Projects/Work/skcamp/mancala"
+alias uno="cd ~/work/skcamp/uno"
+alias rock="cd ~/work/skcamp/rockgame"
+alias mancala="cd ~/work/skcamp/mancala"
 alias concombre='be cucumber'
 
 # newsbound
-alias nb="cd ~/Projects/Work/newsbound"
+alias nb="cd ~/work/newsbound"
 # export PATH=/usr/local/share/npm/bin:$PATH
 
 # github

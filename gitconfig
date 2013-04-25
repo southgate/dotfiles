@@ -1,0 +1,30 @@
+[user]
+	name = Alex Southgate
+	email = southgate@gmail.com
+
+[github]
+  user = fromagie
+
+[hub]
+  protocol = https
+
+[push]
+  default = simple
+
+[alias]
+  co = checkout
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  x = !gitx
+
+[apply]
+  whitespace = nowarn
+
+[format]
+  pretty = %C(yellow)%h%Creset %s %C(red)(%cr)%Creset
+
+
+[credential]
+  helper = /opt/boxen/bin/boxen-git-credential
+
+[core]
+  excludesfile = /opt/boxen/config/git/gitignore

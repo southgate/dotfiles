@@ -3,4 +3,4 @@ tmp/
 solr/data*
 TAGS
 tags
-bin-bundler
+bin-bundler/

@@ -1,6 +1,9 @@
 [submodule "janus/hammer"]
-	path = janus/hammer
-	url = git@github.com:matthias-guenther/hammer.vim.git
+  path = janus/hammer
+  url = git@github.com:matthias-guenther/hammer.vim.git
 [submodule "janus/powerline"]
-	path = janus/powerline
-	url = git@github.com:Lokaltog/powerline.git
+  path = janus/powerline
+  url = git@github.com:Lokaltog/powerline.git
+[submodule "janus/tabular"]
+  path = janus/tabular
+  url = git@github.com:godlygeek/tabular.git

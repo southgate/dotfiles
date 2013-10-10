@@ -4,12 +4,13 @@
 --type-add=js=.coffee
 --type-add=ruby=.feature
 
---ignore-file=is:tags
+--ignore-file=match:/tags/
 
 --ignore-dir=doc
+--ignore-dir=logs
+--ignore-dir=log
 --ignore-dir=coverage
 --ignore-dir=tmp
 --ignore-dir=.jhw-cache
 --ignore-dir=.meteor
 --ignore-dir=vendor
-

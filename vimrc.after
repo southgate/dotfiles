@@ -7,7 +7,7 @@ map <Leader>r :NERDTreeFind<CR>
 map <F6> :%s/\s\+$//g<CR>
 "set dir=/tmp " Write swap files to /tmp.
 
-"map <C-F12> :!ctags -R --exclude=.git --exclude=logs --exclude=doc .<CR>
+map <C-F12> :!ctags -R --exclude=.git --exclude=logs --exclude=doc .<CR>
 
 " Ignore files. This will affect 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/.*cache/*

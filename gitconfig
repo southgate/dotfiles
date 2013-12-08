@@ -29,3 +29,6 @@
 
 [core]
   excludesfile = /opt/boxen/config/git/gitignore
+	whitespace = trailing-space,space-before-tab,indent-with-non-tab
+[color]
+	ui = auto

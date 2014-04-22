@@ -15,7 +15,7 @@
   co = checkout
   ci = commit
   fm = !git fetch && git merge origin/master
-  po = pull origin
+  pl = pull origin
   pu = push origin
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   x = !github

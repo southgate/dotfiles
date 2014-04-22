@@ -1,6 +1,6 @@
 [user]
-	name = Alex Southgate
-	email = southgate@gmail.com
+  name = Alex Southgate
+  email = southgate@gmail.com
 
 [github]
   user = fromagie
@@ -17,7 +17,6 @@
   fm = !git fetch && git merge origin/master
   po = pull origin
   pu = push origin
-  poo = push origin
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   x = !github
 
@@ -33,9 +32,11 @@
 
 [core]
   excludesfile = /opt/boxen/config/git/gitignore
-	whitespace = trailing-space,space-before-tab,indent-with-non-tab
+  whitespace = trailing-space,space-before-tab,indent-with-non-tab
+
 [color]
-	ui = auto
+  ui = auto
+
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f

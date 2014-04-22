@@ -22,10 +22,9 @@ alias gb='for k in `git branch|sed "s/^..//"`;do echo -e `git log -1 --pretty=fo
 alias gl="git log --pretty=oneline --graph --all"
 alias gdb='git branch --merged | grep -v "\*" | grep -v master | xargs git branch -d'
 
-alias gpl="git pull origin"
-alias gpu="git push origin"
-alias gpoo="gpu"
-alias gfm="git fetch && git merge origin/master"
+alias gpl="git pl"
+alias gpu="git pu"
+alias gfm="git fm"
 
 alias gd="git diff"
 alias gs="git status"

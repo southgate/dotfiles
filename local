@@ -11,11 +11,13 @@ alias vless='vim -R -T builtin_ansi -u /usr/share/vim/vim62/macros/less.vim'
 alias spondooliks='ssh spondool@spondooliks.org'
 alias p='ping google.com'
 alias vim='mvim -v'
+alias less="less -R"
 
 alias be='bundle exec'
-alias t='be testrb'
+alias t='bin/testrb'
 alias e='subl . &'
-alias tags='ctags -R --languages=ruby --exclude=.git'
+alias rtags='ctags -R --languages=ruby --exclude=.git'
+alias cpptags='ctags -R --languages=cpp --exclude=.git'
 
 # git shortcuts
 alias gb='for k in `git branch|sed "s/^..//"`;do echo -e `git log -1 --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" "$k" --`\\t"$k";done|sort'
@@ -47,19 +49,7 @@ alias findsmall='find . -size -1000000c'
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
 # Project shortucts
-
-# skcamp
-alias uno="cd ~/work/skcamp/uno"
-alias rock="cd ~/work/skcamp/rockgame"
-alias mancala="cd ~/work/skcamp/mancala"
-alias concombre='be cucumber'
-
-# newsbound
-alias nb="cd ~/work/newsbound"
-# export PATH=/usr/local/share/npm/bin:$PATH
-
-# github
 alias ghid="cd ~/github/id"
 alias gh="cd ~/github/github"
 alias ghe="cd ~/github/enterprise-web"
-
+alias drop="cd ~/src/dropship/dropship"

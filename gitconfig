@@ -19,7 +19,10 @@
   fm = !git fetch && git merge origin/master
   ap = add --patch
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  l = log --oneline --stat
   x = !github
+  undo = reset HEAD@{1}
+  unstage = reset HEAD --
 
 [apply]
   whitespace = nowarn
@@ -39,5 +42,7 @@
   ui = auto
 
 [filter "media"]
-  clean = git-media-clean %f
-  smudge = git-media-smudge %f
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[rerere]
+	enabled = true

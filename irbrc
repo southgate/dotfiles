@@ -1,1 +1,1 @@
-me = dat "southgate"
+me = dat "southgate" if defined?(dat)

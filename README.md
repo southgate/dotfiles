@@ -5,7 +5,7 @@ For use on UNIX machines (I hope).  Mostly stolen from http://github.com/ryanb/d
 ### Installation
 
 ```
-  git clone git@github.com:southgate/dotfiles.git .dotfiles
-  cd ~/.dotfiles
-  rake install
-``
+$ git clone git@github.com:southgate/dotfiles.git .dotfiles
+$ cd ~/.dotfiles
+$ rake install
+```

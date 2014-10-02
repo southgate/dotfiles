@@ -14,7 +14,7 @@ alias vim='mvim -v'
 alias less="less -R"
 
 alias be='bundle exec'
-alias t='bin/testrb'
+alias t='be bin/testrb'
 alias e='subl . &'
 alias rtags='ctags -R --languages=ruby --exclude=.git'
 alias cpptags='ctags -R --languages=cpp --exclude=.git'
@@ -31,6 +31,7 @@ alias gfm="git fm"
 alias gd="git diff"
 alias gs="git status"
 
+alias gre="git reset --hard HEAD"
 alias gcb="git checkout -b $1"
 alias gap="git add --patch"
 alias gc="git commit -m $1"

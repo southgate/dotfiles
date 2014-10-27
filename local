@@ -54,3 +54,6 @@ alias ghid="cd ~/github/id"
 alias gh="cd ~/github/github"
 alias ghe="cd ~/github/enterprise-web"
 alias drop="cd ~/src/dropship/dropship"
+
+# Source Boxen environment
+source /opt/boxen/env.sh

@@ -16,6 +16,7 @@
   ci = commit
   pl = pull origin
   pu = push origin
+  po = !sh -c 'git push -u origin `git rev-parse --abbrev-ref HEAD`'
   fm = !git fetch && git merge origin/master
   ap = add --patch
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative

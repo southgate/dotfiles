@@ -3,13 +3,13 @@
     fontFamily: "Monaco"
     showInvisibles: true
     invisibles: {}
-    fontSize: 13
+    fontSize: 12
   core:
     disabledPackages: [
       "minimap"
     ]
     themes: [
-      "solarized-dark-ui"
+      "atom-solarized-dark-ui"
       "solarized-dark-syntax"
     ]
   "spell-check":
@@ -26,3 +26,4 @@
     userId: "055d0eb0-6231-b988-1129-079afb8736cf"
   "release-notes":
     viewedVersion: "0.94.0"
+  linter: {}

@@ -12,6 +12,7 @@ alias spondooliks='ssh spondool@spondooliks.org'
 alias p='ping google.com'
 alias vim='mvim -v'
 alias less="less -R"
+alias nv="atom ~/Dropbox/Documents/Notational\ Data"
 
 alias be='bundle exec'
 alias t='be bin/testrb'

@@ -3,10 +3,13 @@
     fontFamily: "Monaco"
     showInvisibles: true
     invisibles: {}
-    fontSize: 12
   core:
     disabledPackages: [
-      "minimap"
+      "git-blame"
+      "notational-velocity"
+      "linter-ruby"
+      "linter"
+      "sort-lines"
     ]
     themes: [
       "atom-solarized-dark-ui"
@@ -26,4 +29,25 @@
     userId: "055d0eb0-6231-b988-1129-079afb8736cf"
   "release-notes":
     viewedVersion: "0.94.0"
-  linter: {}
+  linter:
+    showErrorTabProject: false
+    showErrorTabFile: false
+  "notational-velocity":
+    directory: "/Users/alex/Dropbox/Documents/Notational Data"
+  "ctags-status": {}
+  "linter-ruby":
+    rubyExecutablePath: '''
+      /opt/boxen/rbenv/shims/ruby
+      /opt/boxen/rbenv/shims/ruby
+      
+    '''
+  minimap: {}
+  "atom-alignment":
+    alignBy: [
+      "||="
+      "=>"
+      "="
+      ":="
+      "-"
+    ]
+  Zen: {}

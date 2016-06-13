@@ -1,9 +1,10 @@
 [user]
   name = Alex Southgate
   email = southgate@gmail.com
+	signingkey = A5E7E35C
 
 [github]
-  user = fromagie
+	user = southgate
 
 [hub]
   protocol = https
@@ -34,7 +35,7 @@
 
 
 [credential]
-  helper = /opt/boxen/bin/boxen-git-credential
+	helper = osxkeychain
 
 [core]
   excludesfile = /opt/boxen/config/git/gitignore

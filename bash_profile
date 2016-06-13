@@ -19,6 +19,6 @@ xterm*|rxvt*)
     ;;
 esac
 
-if [ -f ~/.local ]; then
-  . ~/.local
+if [ -f ~/.localrc ]; then
+  . ~/.localrc
 fi

@@ -1,4 +1,6 @@
-### Local ### 
+# Local ### 
+
+export PATH=bin:$PATH
 
 # Local installs
 export EDITOR=mvim
@@ -57,5 +59,4 @@ alias ghe="cd ~/github/enterprise-web"
 alias drop="cd ~/src/dropship/dropship"
 
 # Source Boxen environment
-source /opt/boxen/env.sh
 source ~/.github/dashboards

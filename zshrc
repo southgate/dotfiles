@@ -39,8 +39,8 @@ for zshrc_snipplet in ~/.zsh.d/[0-9][0-9]*[^~] ; do
         source $zshrc_snipplet
 done
 
-if [ -f ~/.local ]; then
-  source ~/.local
+if [ -f ~/.localrc ]; then
+  source ~/.localrc
 fi
 
 if [ -f ~/.pw ]; then

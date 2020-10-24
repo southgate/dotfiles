@@ -55,7 +55,7 @@ alias findsmall='find . -size -1000000c'
 
 # Project shortucts
 alias ghid="cd ~/github/id"
-alias gh="cd ~/github/github"
+alias github="cd ~/github/github"
 alias dada="cd ~/src/southgate/dada"
 alias ghe="cd ~/github/enterprise-web"
 alias drop="cd ~/src/dropship/dropship"

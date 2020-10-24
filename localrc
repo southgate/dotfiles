@@ -59,6 +59,3 @@ alias gh="cd ~/github/github"
 alias dada="cd ~/src/southgate/dada"
 alias ghe="cd ~/github/enterprise-web"
 alias drop="cd ~/src/dropship/dropship"
-
-# Source Boxen environment
-source ~/.github/dashboards

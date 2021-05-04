@@ -17,7 +17,6 @@ alias less="less -R"
 
 alias be='bundle exec'
 alias t='be bin/testrb'
-alias e='subl . &'
 alias rtags='ctags -R --languages=ruby --exclude=.git'
 alias cpptags='ctags -R --languages=cpp --exclude=.git'
 

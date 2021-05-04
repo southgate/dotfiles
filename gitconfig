@@ -40,6 +40,12 @@
 [core]
   excludesfile = /opt/boxen/config/git/gitignore
   whitespace = trailing-space,space-before-tab,indent-with-non-tab
+	editor = code-insiders --wait
+
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code-insiders --wait --diff $LOCAL $REMOTE
 
 [color]
   ui = auto

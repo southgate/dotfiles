@@ -64,5 +64,8 @@ function j { local new_path="$(autojump $@)";if [ -n "$new_path" ]; then echo -e
 ### Initialize rbenv
 eval "$(rbenv init -)"
 
+### Initialize nodenv
+eval "$(nodenv init -)"
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"

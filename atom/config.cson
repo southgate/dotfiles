@@ -22,7 +22,6 @@
       "atom-solarized-dark-ui"
       "solarized-dark-syntax"
     ]
-  "ctags-status": {}
   editor:
     fontFamily: "Monaco"
     invisibles: {}

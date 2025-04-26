@@ -17,8 +17,6 @@ alias less="less -R"
 
 alias be='bundle exec'
 alias t='be bin/testrb'
-alias rtags='ctags -R --languages=ruby --exclude=.git'
-alias cpptags='ctags -R --languages=cpp --exclude=.git'
 
 # git shortcuts
 alias gb='for k in `git branch|sed "s/^..//"`;do echo -e `git log -1 --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" "$k" --`\\t"$k";done|sort'

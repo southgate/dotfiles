@@ -1,7 +1,6 @@
 # Local ### 
 
 export PATH=bin:$PATH
-export PATH=$HOME/.rbenv/bin:$PATH
 
 # Local installs
 export EDITOR=code

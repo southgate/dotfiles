@@ -1,2 +1,3 @@
 font-family = Osaka-Mono
 theme = ayu
+keybind = shift+enter=text:\n
